@@ -1,0 +1,32 @@
+retrieval_init:                 #initialization parameter for inversion
+    max_iter: 35
+    chi2_lim: 0.05
+    
+atmosphere:
+    nlay: 1                    #number of atmospheric layers
+    dzlay: 1000                 #geometrical thickness of the layers [m]
+    psurf: 101300               #surface pressure [Pa]
+    xch4_guess: 1800.0          # reference CH4 concentration (background) [ppb]
+    xco2_guess : 405.0           # reference CO2 concentration (background) [ppm]    
+
+std_atm: 'prof.AFGL.US.std'     #path to AFGL model atmosphere
+    
+filename:
+    l2_output:    'airmo_l2'       #output file for geophysical scene
+    l1b_input:    'airmo_l1b'      #gm output file
+
+spec_settings:              #settings for line-by-line spectra
+    wave_start:   1575       #initial wavelength (indicator)
+    wave_end:     1690      #final wavlength of measurement
+    wave_extend: 2.0        #shortwave and longwave extension of the measurement grid [nm]
+    dwave:       0.002      #nm
+
+isrf_settings:
+    type:       'Gaussian'  #type of ISRF, currently only Gaussian
+    fwhm:       0.5        #fwhm  [nm]
+    
+surface:
+    wave_alb: [1600, 1650]  #wavelengths at which the surface albedo is specified in the output
+    
+xsec_forced: False          #flag to froce new cross section calculation
+

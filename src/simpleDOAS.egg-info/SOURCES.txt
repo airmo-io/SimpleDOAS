@@ -1,0 +1,14 @@
+pyproject.toml
+src/__init__.py
+src/cross_sections_v2.py
+src/import_spectra.py
+src/main.py
+src/plot_nc_data.py
+src/utilities.py
+src/simpleDOAS.egg-info/PKG-INFO
+src/simpleDOAS.egg-info/SOURCES.txt
+src/simpleDOAS.egg-info/dependency_links.txt
+src/simpleDOAS.egg-info/requires.txt
+src/simpleDOAS.egg-info/top_level.txt
+src/unused/find_release_frames.py
+src/unused/hitran_simple.py
